@@ -9,6 +9,7 @@
 #    (In our lab, you need to add "export PATH=$PATH:/usr/dist/dls/bin" to your ~/.bashrc file.)
 # 4. Modify "wdir", "trial" and "sim_fits" by yourself, as well as the parameters in fiatfilter& fiatmap.
 # 5. To add PSF stars into the simulation image, you also need addPsfSingleCluster.py and the correct PSF image.
+# 6. (Updated 2019/7/1) obs_file is working with DM v13.0 (Python 2). If you are using a later version of DM ot Python, please ignore this script!
 ########################################################################
 # Set the filenames. Modify them by yourself!
 wdir="./"  #working directory where the files are. DON'T miss the '/' in the path!
