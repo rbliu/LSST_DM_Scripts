@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 ## last modified by Robert Liu at 7/21/2017
+## This script is deprecated. To convert src FITS file to fiat catalog, please use src2fcat or readout_src_2.0. 
+
 import re
 import sys
 import numpy as np
