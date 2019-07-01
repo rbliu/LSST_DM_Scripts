@@ -1,3 +1,4 @@
+#Ian's choice for CFHT coadded images
 
 config.charImage.repair.cosmicray.nCrPixelMax=10000000
 
