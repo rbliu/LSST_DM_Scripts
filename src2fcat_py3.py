@@ -26,8 +26,10 @@ print('# fiat 1.0')
 #     print('# TTYPE' + str(i+1) + ' = ' + header_table['TFLAG*'][i])
 
 # Print all the column names except the 1st column "flags"
+# for i in range(len(header_table['TTYPE*'])-1):
+#     print('# TTYPE' + str(len(header_table['TFLAG*'])+i+1) + ' = ' + header_table['TTYPE*'][i+1])
 for i in range(len(header_table['TTYPE*'])-1):
-    print('# TTYPE' + str(len(header_table['TFLAG*'])+i+1) + ' = ' + header_table['TTYPE*'][i+1])
+    print('# TTYPE' + str(i+1) + ' = ' + header_table['TTYPE*'][i+1])
 
 
 # Print the catalog part
