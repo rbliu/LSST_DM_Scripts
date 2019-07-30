@@ -14,11 +14,12 @@ if len(sys.argv) != 2:
     exit(1);
 fits1 = sys.argv[1]
 
-
+# Open the fits image with update mode. Read the string of DATE keyword.
 hdu = fits.open(fits1, mode='update')
 date_string = hdu[0].header['date']
 print('Date and time when this FITS was generated: ', date_string)
 
+# Append the date string to the end of header and save it as DTUTC.
 hdu[0].header.append(('DTUTC', date_string, 'Date Time'), end=True)
 hdu.close()
 
